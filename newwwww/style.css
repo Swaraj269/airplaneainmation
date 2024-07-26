@@ -1,0 +1,73 @@
+:root {
+  --blue: #030771;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+main {
+  overflow: hidden;
+}
+.box {
+    position: relative;
+  display: flex;
+  align-items: center;
+  gap: 0.4vw;
+}
+.initial3dots {
+  height: 0.7vw;
+  width: 0.7vw;
+  border-radius: 100%;
+  background-color: var(--blue);
+}
+.airplanedots {
+    height: 0.7vw;
+    width: 0.7vw;
+    border-radius: 100%;
+    opacity: 0;
+    background-color: var(--blue);
+}
+.leftwing{
+    display: flex;
+    flex-direction: column;
+    gap: 0.4vw;
+    position: absolute;
+    top: 38%;
+    left: 55%;
+    rotate: 48deg;
+}
+.rightwing{
+    display: flex;
+    flex-direction: column;
+    gap: 0.4vw;
+    position: absolute;
+    top: -515%;
+    left: 55%;
+    rotate: -48deg;
+}
+.bottomleftwing{
+    display: flex;
+    flex-direction: column;
+    gap: 0.4vw;
+    position: absolute;
+    top: 60%;
+    left: -12%;
+    rotate: 50deg;
+}
+.bottomrightwing{
+    display: flex;
+    flex-direction: column;
+    gap: 0.4vw;
+    position: absolute;
+    top: -220%;
+    left: -12%;
+    rotate: -50deg;
+}
